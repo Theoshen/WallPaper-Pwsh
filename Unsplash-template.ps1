@@ -27,6 +27,12 @@ Function Set-DesktopWallPaper($imagePath) {
  
 # Get Image From Unsplash
 $image = Save-UnsplashRandomImage
+
+Write-Host "Download Image Successfully"
+
+Start-Sleep -Seconds 3
  
 # Set WallPaper
 Set-DesktopWallPaper -imagePath $image
+
+Write-Host "Done"
